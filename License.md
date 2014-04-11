@@ -24,10 +24,7 @@ Certain Files have licenses of their own, from their respective owners. As files
 
 **Metro UI CSS - http://metroui.org.ua/**
 
-+ min/metro-bootstrap.min.css - Without Modification
-+ min/metro-bootstrap-responsive.min.css - Without Modification
-+ min/iconFont.min.css - Without Modification
-+ min/metro.min.js - Without Modification
++ all metro- prefixed js and css - without modification
 
 **jQuery - https://jquery.org/**
 
