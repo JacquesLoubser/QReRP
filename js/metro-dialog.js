@@ -21,6 +21,10 @@
             overlay: false,
             width: 'auto',
             height: 'auto',
+		maxWidth: 'auto',
+            maxHeight: 'auto',
+		minWidth: 'auto',
+            minHeight: 'auto',
             position: 'default',
             padding: false,
             overlayClickClose: true,
@@ -91,6 +95,12 @@
 
         if (params.width != 'auto') _window.css('min-width', params.width);
         if (params.height != 'auto') _window.css('min-height', params.height);
+
+if (params.minWidth != 'auto') _window.css('min-width', params.minWidth);
+        if (params.minHeight != 'auto') _window.css('min-height', params.minHeight);
+
+if (params.maxWidth != 'auto') _window.css('max-width', params.maxWidth);
+        if (params.maxHeight != 'auto') _window.css('max-height', params.maxHeight);
 
         _overlay.hide().appendTo('body').fadeIn('fast');
 

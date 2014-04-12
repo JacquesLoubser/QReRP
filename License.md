@@ -25,6 +25,7 @@ Certain Files have licenses of their own, from their respective owners. As files
 **Metro UI CSS - http://metroui.org.ua/**
 
 + all metro- prefixed js and css - without modification
++ metro-dialog.js - Added variables to support both min- and max- width & height via minWidth maxHeight etc.
 
 **jQuery - https://jquery.org/**
 

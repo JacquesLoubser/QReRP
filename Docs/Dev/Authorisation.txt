@@ -1,9 +1,0 @@
-Forms Processing:
-
-auth.php is used to handle login. On Fail, it will return to the login form. On Succeed, The user will be directed to the Main Menu.
-
-Classes:(auth.php)
-
-authUser() - can be used to check the user's login status and the user has the required permissions. If the user has a persistant cookie, the renewCookie() will be called. The user will be redirected to the correct error page on error.
-
-renewCookie() - Renew's a user's persistant cookie for 30 days. Does not create a new cookie.
