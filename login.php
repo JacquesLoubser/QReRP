@@ -24,6 +24,8 @@ if($auth=true)
 <script src="min/metro.min.js"></script>
 <script src="js/metro-dialog.js"></script>
 
+
+
 </head>
 <body id="bod">
 <script type="text/javascript">
@@ -33,6 +35,7 @@ $(document).ready(function(){
 		maxHeight: 500,
 		padding: 20,
         overlay: true,
+		overlayClickClose: false,
         shadow: true,
         flat: true,
 		sysButtons: false,
@@ -41,10 +44,28 @@ $(document).ready(function(){
         content: '',
         onShow: function(_dialog){
             var content = _dialog.children('.content');
-content.html('<label for="Username">Username</label><div align="center" class="input-control text size3"><input id="Username" type="text" value="" placeholder="Type Username"/><button class="btn-clear"></button></div><label for="pass">Password</label> <div  class="input-control password size3"><input id="pass" type="password" value="" placeholder="Type Password"/><button class="btn-reveal"></button></div><div class="input-control checkbox"> <label><input type="checkbox" /><span class="check"></span>Keep Me Logged in </label></div><div><button class="large primary">Login</button><button class="large info">Cancel</button></div>');
+content.html('<label for="Username">Username</label> <div align="center" class="input-control text size3"> <input id="Username" type="text" value="" placeholder="Type Username" /> <button class="btn-clear"></button> </div> <label for="pass">Password</label> <div class="input-control password size3"> <input id="pass" type="password" value="" placeholder="Type Password" /> <button class="btn-reveal"></button> </div> <div class="input-control checkbox"> <label> <input id="persis" type="checkbox" /> <span class="check"></span>Keep Me Logged in</label> </div> <div> <button id="login" class="large primary">Login</button> <button class="large info">Cancel</button> </div>');
         }
+    });
+    $("#login").on("click",function () {
+        if ($("#Username").val().toString() != "" && $("#pass").val().toString() != "") {
+            $.post("auth.php", {
+                   // user: $("#Username").val(),
+                   // password: $("#pass").val(),
+                   // persistent: $("#persis").val()
+				   user:"TEST"
+                },
+                function (data, status) {
+                    alert("Data: " + data + "\nStatus: " + status);
+                });
+		}
+		else
+		{
+		alert("hi");	
+		}
     });
 });
 </script>
+
 </body>
 </html>
