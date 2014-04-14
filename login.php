@@ -50,10 +50,9 @@ content.html('<label for="Username">Username</label> <div align="center" class="
     $("#login").on("click",function () {
         if ($("#Username").val().toString() != "" && $("#pass").val().toString() != "") {
             $.post("auth.php", {
-                   // user: $("#Username").val(),
-                   // password: $("#pass").val(),
-                   // persistent: $("#persis").val()
-				   user:"TEST"
+                   user: $("#Username").val(),
+                   password: $("#pass").val(),
+                   persistent: $("#persis").val()
                 },
                 function (data, status) {
                     alert("Data: " + data + "\nStatus: " + status);
