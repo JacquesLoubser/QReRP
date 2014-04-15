@@ -1,27 +1,26 @@
 <?php
-$a=true;
-if($a=false)
-{
 require("auth.php");
 $auth = authUser(false);
-if($auth=true)
+if($auth==true)
 {
-	printf("<script>location.href='login.php'</script>");
-	 echo '<META HTTP-EQUIV="Refresh" Content="0; URL=login.php">';    
+	echo('<script>location.href="index.php"</script>');
+	echo ('<META HTTP-EQUIV="Refresh" Content="0; URL=index.php">');    
     die();
-}
 }
 ?>
 <!Doctype HTML>
 <head>
 <title>Login to QReRP</title>
-<link href="min/metro-bootstrap.min.css" rel="stylesheet">
-<link href="min/metro-bootstrap-responsive.min.css" rel="stylesheet">
-<link href="min/iconFont.min.css" rel="stylesheet">
-<script src="min/jquery.min.js"></script>
-<script src="min/jquery.ui.widget.min.js"></script>
-<script src="min/jquery.mousewheel.js"></script>
-<script src="min/metro.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/metro-bootstrap.min.css" rel="stylesheet">
+<link href="css/metro-bootstrap-responsive.min.css" rel="stylesheet">
+<link href="css/iconFont.min.css" rel="stylesheet">
+<link href="css/mycss.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.ui.widget.min.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/metro.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/metro-dialog.js"></script>
 
 
@@ -44,8 +43,9 @@ $(document).ready(function(){
         content: '',
         onShow: function(_dialog){
             var content = _dialog.children('.content');
-content.html('<label for="Username">Username</label> <div align="center" class="input-control text size3"> <input id="Username" type="text" value="" placeholder="Type Username" /> <button class="btn-clear"></button> </div> <label for="pass">Password</label> <div class="input-control password size3"> <input id="pass" type="password" value="" placeholder="Type Password" /> <button class="btn-reveal"></button> </div> <div class="input-control checkbox"> <label> <input id="persis" type="checkbox" /> <span class="check"></span>Keep Me Logged in</label> </div> <div> <button id="login" class="large primary">Login</button> <button class="large info">Cancel</button> </div>');
+content.html('<label for="Username">Username</label> <div align="center" class="input-control text size3"> <input id="Username" type="text" value="" placeholder="Type Username" /> <button class="btn-clear"></button> </div> <label for="pass">Password</label> <div class="input-control password size3"> <input id="pass" type="password" value="" placeholder="Type Password" /> <button class="btn-reveal"></button> </div> <div class="input-control checkbox"> <label> <input id="persis" type="checkbox" /> <span class="check"></span>Keep Me Logged in</label> </div><div id="error"></div><div> <button id="login" class="large primary">Login</button> <button class="large info">Cancel</button> </div>');
         }
+
     });
     $("#login").on("click",function () {
         if ($("#Username").val().toString() != "" && $("#pass").val().toString() != "") {
@@ -55,12 +55,18 @@ content.html('<label for="Username">Username</label> <div align="center" class="
                    persistent: $("#persis").val()
                 },
                 function (data, status) {
-                    alert("Data: " + data + "\nStatus: " + status);
+                    
+					if(data=="false")
+					{
+						$("#error").html(' <div class="alert alert-danger"><strong>Error!</strong> Please check your username and password.</div>');
+						$.Dialog.autoResize();
+					}
                 });
 		}
 		else
 		{
-		alert("hi");	
+		$("#error").html('<div class="alert alert-warning"><strong>Error!</strong> Please check all the fields are filled in.</div>');
+						$.Dialog.autoResize();	
 		}
     });
 });

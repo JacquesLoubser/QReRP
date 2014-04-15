@@ -29,6 +29,11 @@ Certain Files have licenses of their own, from their respective owners. As files
 
 **jQuery - https://jquery.org/**
 
-+ min/jquery.min.js - Without Modification
-+ min/jquery.ui.widget.min.js - Without Modification
-+ min/jquery.mousewheel.js - Without Modification
++ jquery.min.js - Without Modification
++ jquery.ui.widget.min.js - Without Modification
++ jquery.mousewheel.js - Without Modification
+
+**Bootstrap - http://getbootstrap.com/**
+
++ bootstrap.min.css - Without Modification
++ bootstrap.min.js - Without Modification

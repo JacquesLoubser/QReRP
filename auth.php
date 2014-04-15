@@ -54,27 +54,30 @@ function authUser($redirect)
 		renewCookie();
 		return true;
 	}
-	
 	else
 	{
-		if(isset($_SESSION['user']))
-	{
-		return true;
+		if (isset($_SESSION['user']))
+		{
+			return true;
+		}
+		else
+		{
+			if ($redirect == true)
+			{
+				printf("<script>location.href='login.php'</script>");
+				echo('<META HTTP-EQUIV="Refresh" Content="0; URL=login.php">');
+				
+
+				die();
+
+			}
+			return false;
+			
+		}
 	}
-	
-else
-{
-	if($redirect=true)
-	{
-	printf("<script>location.href='login.php'</script>");
-	 echo '<META HTTP-EQUIV="Refresh" Content="0; URL=login.php">';    
-    die();    
-	//DIE!!!
-	}
-	die();
 }
-	}
-}
+
+
 function renewCookie()
 {
 	$expire=time()+60*60*24*30;
