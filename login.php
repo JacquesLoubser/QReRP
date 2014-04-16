@@ -1,6 +1,11 @@
 <?php
 require("auth.php");
-$auth = authUser(false);
+$pageID=0;
+if(isset($_GET['pageID']))
+{
+$pageID=$_GET['pageID'];
+}
+$auth = authUser(false,$pageID);
 if($auth==true)
 {
 	echo('<script>location.href="index.php"</script>');

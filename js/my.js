@@ -7,3 +7,14 @@ function back()
 {
 window.history.back();
 }
+function changeContent(pageNo){
+      $.post("auth.php", {
+                   pageID: pageNo
+                },
+                function (data, status) {                    
+						$("#content").html(data);
+						
+                });
+	  
+    }
+	

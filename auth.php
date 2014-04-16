@@ -47,25 +47,27 @@ if (isset($_POST["user"]) && isset($_POST["password"]))
 	}
 }
 
-function authUser($redirect)
+function authUser($redirect,$pageID)
 {
 	if (isset($_COOKIE["user_id"]))
 	{
 		renewCookie();
-		return true;
+		
+		checkPage($pageID);
 	}
 	else
 	{
 		if (isset($_SESSION['user']))
 		{
-			return true;
+			
+			checkPage($pageID);
 		}
 		else
 		{
 			if ($redirect == true)
 			{
-				printf("<script>location.href='login.php'</script>");
-				echo('<META HTTP-EQUIV="Refresh" Content="0; URL=login.php">');
+				printf("<script>location.href='login.php?pageID=\""+$pageID+"\"'</script>");
+				echo('<META HTTP-EQUIV="Refresh" Content="0; URL=login.php?pageID="'+$pageID+'"">');
 				
 
 				die();
@@ -83,9 +85,11 @@ function renewCookie()
 	$expire=time()+60*60*24*30;
 setcookie("user_id", $_COOKIE["user_id"], $expire);
 }
-//function renewCookie($user_id)
-//{
-//	$expire=time()+60*60*24*30;
-//setcookie("user_id", $user_id, $expire);
-//}
-//?>
+function checkPage($pageID)
+{
+	if($pageID!=0)
+	{
+		
+	}
+}
+?>
