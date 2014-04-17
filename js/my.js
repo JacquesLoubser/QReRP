@@ -11,9 +11,11 @@ function changeContent(pageNo){
       $.post("auth.php", {
                    pageID: pageNo
                 },
-                function (data, status) {                    
-						$("#content").html(data);
-						
+                function (data, status) {  
+				var  input=data.split('|'); 
+				$("#titleLarge").html(input[1]);
+				$("#titleSmall").html(data);                 
+				$.post(input[0], {},function (data, status) {$("#content").html(data);});
                 });
 	  
     }

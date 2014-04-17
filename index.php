@@ -22,7 +22,7 @@
 <i class="icon-arrow-left-3 fg-darker smaller">
 </i>
 </a>
-Welcome<small class="on-right">[login name]
+<span id=titleLarge">Welcome</span><small class="on-right"><span id="titleSmall">[login name]</span>
 </small>
 </h1>
 <hr style="height:3px">

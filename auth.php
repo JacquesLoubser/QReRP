@@ -46,6 +46,41 @@ if (isset($_POST["user"]) && isset($_POST["password"]))
 
 	}
 }
+else if(isset($_POST["pageID"]))
+{
+	$server="127.0.0.1:8888/QReRP/";
+	$con = mysqli_connect('localhost', 'root', '', 'coolfusion');
+	if (!$con)
+	{
+		die('Could not connect: ' . mysqli_error($con));
+	}
+
+	mysqli_select_db($con, "coolfusion");
+	$sql = "SELECT * FROM pageLookup WHERE ID = '" . $_POST["pageID"] . "'";
+	$result = mysqli_query($con, $sql);
+	$num_rows = $result->num_rows;
+	if ($num_rows > 0)
+	{
+		
+		$count = 0;
+		while ($row = mysqli_fetch_array($result))
+		{
+			
+			if ($count == 0)
+			{
+				$count = 1;
+				echo $server . $row['Address'] ."|". $row['titleLarge'] ."|" . $row['titleSmall'] ;
+			}
+		}
+	}
+	else
+	{
+		echo ("Page Invalid");
+
+		
+
+	}
+}
 
 function authUser($redirect,$pageID)
 {
