@@ -69,7 +69,7 @@ else if(isset($_POST["pageID"]))
 			if ($count == 0)
 			{
 				$count = 1;
-				echo $server . $row['Address'] ."|". $row['titleLarge'] ."|" . $row['titleSmall'] ;
+				echo ($row['Address'] ."|". $row['titleLarge'] ."|" . $row['titleSmall']) ;
 			}
 		}
 	}

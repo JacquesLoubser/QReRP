@@ -22,7 +22,7 @@
 <i class="icon-arrow-left-3 fg-darker smaller">
 </i>
 </a>
-<span id=titleLarge">Welcome</span><small class="on-right"><span id="titleSmall">[login name]</span>
+<span id="titleLarge">Welcome</span><small class="on-right"><span id="titleSmall">[login name]</span>
 </small>
 </h1>
 <hr style="height:3px">
@@ -31,18 +31,14 @@
 </div>
 <div id="space"></div>
 <?php
-if(isset($_GET['Forward']))
+if(isset($_GET['pageID']))
 {
-	
-}
-else
-{
-	
+	echo('<script>changeContent($_GET["pageID"]);</script>');
 }
 ?>
 <div id="content">
 
-<a href="Clients/index.html">
+<a href="javascript:void(0);" onClick="changeContent(1);">
 <div class="tile bg-cobalt" >
     <div class="tile-content icon">
         <i class="icon-user-2"></i>

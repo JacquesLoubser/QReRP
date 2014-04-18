@@ -8,9 +8,17 @@ $pageID=$_GET['pageID'];
 $auth = authUser(false,$pageID);
 if($auth==true)
 {
+	if($pageID==0)
+	{
 	echo('<script>location.href="index.php"</script>');
 	echo ('<META HTTP-EQUIV="Refresh" Content="0; URL=index.php">');    
     die();
+	}
+	else
+	{
+		echo('<script>location.href="index.php?pageID='.$pageID.'"</script>');
+	echo ('<META HTTP-EQUIV="Refresh" Content="0; URL=index.php?pageID='.$pageID.'">');
+	}
 }
 ?>
 <!Doctype HTML>

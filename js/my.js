@@ -14,8 +14,8 @@ function changeContent(pageNo){
                 function (data, status) {  
 				var  input=data.split('|'); 
 				$("#titleLarge").html(input[1]);
-				$("#titleSmall").html(data);                 
-				$.post(input[0], {},function (data, status) {$("#content").html(data);});
+				$("#titleSmall").html(input[2]);                 
+				$.post(input[0], {data:true},function (data, status) {$("#content").html(data);});
                 });
 	  
     }
