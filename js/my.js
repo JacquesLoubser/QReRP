@@ -19,4 +19,17 @@ function changeContent(pageNo){
                 });
 	  
     }
+	 $(function(){
+      var lastScroll = 0;
+      $(window).scroll(function(event){
+          var st = $(this).scrollTop();
+        if (st > lastScroll){
+           $("#float-container").slideUp(500);
+          }
+          else {
+             $("#float-container").slideDown(500);
+          }
+         lastScroll = st;
+      });
+    });
 	
