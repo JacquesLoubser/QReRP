@@ -20,20 +20,12 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Certain Files have licenses of their own, from their respective owners. As files from different works are used, they will be listed here:
+Certain Files have licenses of their own, from their respective owners. As files from different works are modified, they will be listed here:
 
 **Metro UI CSS - http://metroui.org.ua/**
 
-+ all metro- prefixed js and css - without modification
 + metro-dialog.js - Added variables to support both min- and max- width & height via minWidth maxHeight etc.
-
-**jQuery - https://jquery.org/**
-
-+ jquery.min.js - Without Modification
-+ jquery.ui.widget.min.js - Without Modification
-+ jquery.mousewheel.js - Without Modification
 
 **Bootstrap - http://getbootstrap.com/**
 
-+ bootstrap.min.css - Without Modification
-+ bootstrap.min.js - Without Modification
++ bootstrap.min.css - Changed .badge to .boot-badge to fix clash with Metro .badge
