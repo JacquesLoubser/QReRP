@@ -11,6 +11,8 @@
 <script src="js/jquery.ui.widget.min.js"></script>
 <script src="js/jquery.mousewheel.js"></script>
 <script src="js/metro.min.js"></script>
+<script src="js/metro-calendar.js"></script>
+<script src="js/metro-datepicker.js"></script>
 <script src="js/my.js"></script>
 <script src="js/jquery.dataTables.min.js"></script>
 
@@ -26,7 +28,7 @@
 </a>
 <span id="titleLarge"></span><small class="on-right"><span id="titleSmall"></span>
 </small>
-<div class="align-right">
+<div id="extra" class="align-right">
 
 </div>
 </h1>
@@ -55,6 +57,8 @@
         </button>
     </nav>
 </nav>
+<div id="extraInfo" align="right">
+</div>
 </div>
 
 </div>

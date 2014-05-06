@@ -1,15 +1,8 @@
 <?php
 if (isset($_POST["user"]) && isset($_POST["password"]))
 {
-	$con = mysqli_connect('localhost', 'root', '', 'coolfusion');
-	if (!$con)
-	{
-		die('Could not connect: ' . mysqli_error($con));
-	}
-
-	mysqli_select_db($con, "coolfusion");
-	$sql = "SELECT * FROM Users WHERE Name = '" . $_POST["user"] . "' And Password = '" . $_POST["password"] . "'";
-	$result = mysqli_query($con, $sql);
+require("sql_query.php");
+	$result = query("SELECT * FROM Users WHERE Name = '" . $_POST["user"] . "' And Password = '" . $_POST["password"] . "'");
 	$num_rows = $result->num_rows;
 	if ($num_rows > 0)
 	{
@@ -48,7 +41,6 @@ if (isset($_POST["user"]) && isset($_POST["password"]))
 }
 else if(isset($_POST["pageID"]))
 {
-	$server="127.0.0.1:8888/QReRP/";
 	$con = mysqli_connect('localhost', 'root', '', 'coolfusion');
 	if (!$con)
 	{

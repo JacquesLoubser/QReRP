@@ -1,16 +1,17 @@
 <?php
-echo('<a href="javascript:void(0);" onclick="fnGetSelected(oTable);"
-<button class="command-button primary" >
+echo('<a href="javascript:void(0);" onclick="editContent(4,1,\'\');"
+<button class="command-button primary">
     <i class="icon-plus on-left"></i>
     Add
     <small>Adds a client to the database</small>
 </button></a>
  
+<a href="javascript:void(0);" onclick="editContent(5,2,fnGetSelected(oTable));"
 <button id="edit" class="command-button info" disabled="disabled">
     <i class="icon-wrench on-right"></i>
     Edit
     <small>Edits the selected client</small>
-</button>
+</button></a>
 
 <table id="clientTable" class="table bordered striped hovered dataTable" width="100%">
     <thead>
@@ -25,8 +26,6 @@ echo('<a href="javascript:void(0);" onclick="fnGetSelected(oTable);"
     </tbody>
 </table>
 <script>
-
-////////////////
 var oTable;
 $(document).ready(function() {
 $("#clientTable tbody").click(function(event) {
@@ -38,25 +37,20 @@ document.getElementById("edit").disabled = false;
 
 });
 
-/* Init the table */
 oTable = $("#clientTable").dataTable( {
 "bProcessing": true,
 "bServerSide": true,
 "sAjaxSource": "dataTables.php"
 });
-} );
+});
 function fnGetSelected( oTableLocal )
 {
-var aTrs = oTableLocal.fnGetNodes();
-for ( var i=0 ; i<aTrs.length ; i++ )
-{
-if ( $(aTrs[i]).hasClass("row_selected") )
-{
-	alert(i);
-//aReturn.push( aTrs[i] );
+	tds = $(".row_selected").children();
+var selectedClientNo = tds[0].innerHTML;
+	
+	return(selectedClientNo);
 }
-}
-}
+
 </script>
 
 ');
