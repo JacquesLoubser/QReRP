@@ -1,4 +1,5 @@
-<html !Doctype>
+<!Doctype html>
+<html>
 <head>
 <title>QReRP</title>
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -14,6 +15,7 @@
 <script src="js/metro-calendar.js"></script>
 <script src="js/metro-datepicker.js"></script>
 <script src="js/my.js"></script>
+<script src="js/json2.js"></script>
 <script src="js/jquery.dataTables.min.js"></script>
 
 </head>
@@ -73,5 +75,6 @@ if(isset($_GET['pageID']))
 
 </div>
 </div>
+<div id="space"></div>
 </body>
 </html>

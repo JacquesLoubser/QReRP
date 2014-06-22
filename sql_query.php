@@ -1,12 +1,12 @@
 <?php
 function connect()
 	{
-		$con = mysqli_connect('localhost', 'root', '', 'coolfusion');
+    $con = mysqli_connect('localhost', 'root', '', 'qrerp');
 	if (!$con)
 	{
-		die('Could not connect: ' . mysqli_error($con));
+		die("false");
 	}
-	mysqli_select_db($con, "coolfusion");
+	mysqli_select_db($con, "qrerp");
 	return($con);
 	}
 	function query($con,$sql)

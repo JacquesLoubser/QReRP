@@ -39,39 +39,33 @@ require("sql_query.php");
 
 	}
 }
-else if(isset($_POST["pageID"]))
+if(isset($_POST["pageID"]))
 {
-	$con = mysqli_connect('localhost', 'root', '', 'coolfusion');
-	if (!$con)
-	{
-		die('Could not connect: ' . mysqli_error($con));
-	}
-
-	mysqli_select_db($con, "coolfusion");
+	require("sql_query.php");
+	$con = connect();
 	$sql = "SELECT * FROM pageLookup WHERE ID = '" . $_POST["pageID"] . "'";
-	$result = mysqli_query($con, $sql);
+	$result = query($con, $sql);
+
 	$num_rows = $result->num_rows;
 	if ($num_rows > 0)
 	{
-		
-		$count = 0;
+		$count = true;
 		while ($row = mysqli_fetch_array($result))
 		{
-			
-			if ($count == 0)
+			if ($count == true)
 			{
-				$count = 1;
-				echo ($row['Address'] ."|". $row['titleLarge'] ."|" . $row['titleSmall']) ;
+				$count = false;
+				$array = array(
+                    "address" => $row['Address'],
+                    "largeTitle" => $row['titleLarge'],
+                    "smallTitle" => $row['titleSmall'],
+                );
+				echo(json_encode($array)) ;
 			}
 		}
 	}
 	else
-	{
-		echo ("Page Invalid");
-
-		
-
-	}
+	{echo(false);}
 }
 
 function authUser($redirect,$pageID)

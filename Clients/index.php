@@ -1,12 +1,12 @@
 <?php
-echo('<a href="javascript:void(0);" onclick="editContent(4,1,\'\');"
+echo('<a href="javascript:void(0);" onclick="changeContent(4,{clientNo:0});"
 <button class="command-button primary">
     <i class="icon-plus on-left"></i>
     Add
     <small>Adds a client to the database</small>
 </button></a>
  
-<a href="javascript:void(0);" onclick="editContent(5,2,fnGetSelected(oTable));"
+<a href="javascript:void(0);" onclick="changeContent(5,{clientNo:fnGetSelected(oTable)});"
 <button id="edit" class="command-button info" disabled="disabled">
     <i class="icon-wrench on-right"></i>
     Edit
@@ -17,6 +17,7 @@ echo('<a href="javascript:void(0);" onclick="editContent(4,1,\'\');"
     <thead>
         <tr>
             <th>Client ID</th>
+			<th>Client Reference</th>
 			<th>Title</th>
             <th>First Name</th>
             <th>Last Name</th>

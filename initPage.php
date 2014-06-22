@@ -10,6 +10,7 @@ echo('
     </div>
 </div>
 </a>
+
 <a href="javascript:void(0);" onClick="changeContent(2);">
 <div class="tile bg-lightGreen" >
     <div class="tile-content icon">
@@ -20,6 +21,7 @@ echo('
     </div>
 </div>
 </a>
+
 <a href="javascript:void(0);" onClick="changeContent(3);">
 <div class="tile bg-violet" >
     <div class="tile-content icon">
@@ -30,6 +32,7 @@ echo('
     </div>
 </div>
 </a>
+
 <a href="#">
 <div class="tile bg-emerald" >
     <div class="tile-content icon">
@@ -40,6 +43,7 @@ echo('
     </div>
 </div>
 </a>
+
 <a href="#">
 <div class="tile bg-orange" >
     <div class="tile-content icon">
@@ -50,6 +54,7 @@ echo('
     </div>
 </div>
 </a>
+
 <a href="#">
 <div class="tile bg-crimson" >
     <div class="tile-content icon">

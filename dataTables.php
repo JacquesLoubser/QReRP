@@ -10,7 +10,7 @@
 /* Array of database columns which should be read and sent back to DataTables. Use a space where
 * you want to insert a non-database field (for example a counter or static image)
 */
-$aColumns = array( 'ID', 'Title', 'FirstName', 'LastName');
+$aColumns = array( 'ID', 'Ref', 'Title', 'FirstName', 'LastName' );
 /* Indexed column (used for fast and accurate table cardinality) */
 $sIndexColumn = "ID";
 /* DB table to use */
@@ -18,7 +18,7 @@ $sTable = "clients";
 /* Database connection information */
 $gaSql['user'] = "root";
 $gaSql['password'] = "";
-$gaSql['db'] = "coolfusion";
+$gaSql['db'] = "qrerp";
 $gaSql['server'] = "localhost";
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * If you just want to use the basic configuration for DataTables with PHP server-side, there is
