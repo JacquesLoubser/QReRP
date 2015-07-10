@@ -1,0 +1,30 @@
+#cloud-config
+
+hostname: kpci-komatipoort-radius-01
+
+coreos:  
+  etcd:    
+    addr: $private_ipv4:4001
+    peer-addr: $private_ipv4:7001
+  units:
+    - name: etcd.service
+      command: start
+    - name: fleet.service
+      command: start
+    - name: static.network
+      content: |
+        [Match]
+        Name=ens3
+
+        [Network]
+        Address=10.0.0.3/24
+        Gateway=10.0.0.1
+        DNS=208.67.222.222
+        DNS=208.67.220.220 
+users:  
+  - name: core
+    passwd: idonotlikegreeneggsandham
+
+  - groups:
+      - sudo
+      - docker
