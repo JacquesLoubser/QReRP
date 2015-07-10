@@ -1,5 +1,4 @@
-<?php
-echo('<a href="javascript:void(0);" onclick="changeContent(4,{clientNo:0});"
+<a href="javascript:void(0);" onclick="changeContent(4,{clientNo:0});"
 <button class="command-button primary">
     <i class="icon-plus on-left"></i>
     Add
@@ -53,6 +52,3 @@ var selectedClientNo = tds[0].innerHTML;
 }
 
 </script>
-
-');
-?>

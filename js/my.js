@@ -37,7 +37,7 @@ function changeContent(pageNo,args){
             address=data.address;
             if(call!=true)
             {
-               history.push([pageNo,data,args]);
+               //history.push([pageNo,data,args]);
                 if(firstCall!=true)
                 {
                     $("#backArrow").css("visibility","visible");

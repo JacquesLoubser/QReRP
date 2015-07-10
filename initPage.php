@@ -64,5 +64,348 @@ echo('
         <span class="name">Stock</span>
     </div>
 </div>
+</a>
+
+/////
+
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
+</a>
+<a href="#">
+<div class="tile bg-crimson" >
+    <div class="tile-content icon">
+        <i class="icon-basket"></i>
+    </div>
+    <div class="tile-status">
+        <span class="name">Stock</span>
+    </div>
+</div>
 </a>');
 ?>

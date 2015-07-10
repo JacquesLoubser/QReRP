@@ -19,12 +19,12 @@
 <script src="js/jquery.dataTables.min.js"></script>
 
 </head>
-<body class="metro" onLoad="resizePlaceholder(); changeContent(0);" onResize="resizePlaceholder()" >
+<body class="metro" onLoad="resizePlaceholder(); changeContent(0);" onResize="resizePlaceholder();" >
 <div class="container">
 <div class="placeholder">
 <div id="float-container" class="container bar-float" display="inline">
 <h1>
-<a  href="javascript:void(0)" onClick="historyBack()">
+<a  href="javascript:void(0);" onClick="historyBack()">
 <i id="backArrow" class="icon-arrow-left-3 fg-darker smaller" style="visibility:hidden">
 </i>
 </a>
